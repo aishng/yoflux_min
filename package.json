@@ -1,0 +1,20 @@
+{
+  "name": "yoflux",
+  "version": "0.0.0",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "start": "webpack; node server.js"
+  },
+  "dependencies": {
+    "express": "^4.3.2",
+    "fluxible": "^1.0.0",
+    "fluxible-addons-react": "^0.2.0",
+    "object-assign": "^4.0.1",
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0"
+  },
+  "devDependencies": {
+    "webpack": "^1.12.2"
+  }
+}
