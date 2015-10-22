@@ -1,13 +1,10 @@
-var webpack = require('webpack');
-
-var webpackConfig = {
+module.exports = {
     entry: [
         './client.js'
     ],
+
     output: {
         path: 'public/js/',
         filename: 'app.js'
     }
 };
-
-module.exports = webpackConfig;

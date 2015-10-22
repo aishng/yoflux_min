@@ -1,3 +1,3 @@
 module.exports = function Action(actionContext, payload) {
-    actionContext.dispatch('TEST_ACTION', payload);
+    actionContext.dispatch('_ACTION', payload);
 }
