@@ -7,6 +7,7 @@
     "start": "webpack; node server.js"
   },
   "dependencies": {
+    "es6-promise": "^3.0.2",
     "express": "^4.3.2",
     "fluxible": "^1.0.0",
     "fluxible-addons-react": "^0.2.0",

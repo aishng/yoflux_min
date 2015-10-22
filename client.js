@@ -1,4 +1,5 @@
 Object.assign = require('object-assign');
+Promise = require('es6-promise');
 var React = require('react');
 var ReactDOM = require('react-dom');
 var Fluxible = require('fluxible');
