@@ -13,13 +13,15 @@ var Component = React.createClass({
     render: function() {
         return React.createElement('input', {
             onChange: this.handleChange,
-            value: this.props.inputValue
+            value: this.props.inputValue,
+            placeholder: this.props.placeholder
         });
     }
 });
 
-module.exports = provideContext(connectToStores(Component, ['_Store'], function(context, props) {
+module.exports = provideContext(connectToStores(Component, ['_Store', '_Store2'], function(context, props) {
     return {
-        inputValue: context.getStore('_Store').getInputValue()
+        inputValue: context.getStore('_Store').getInputValue(),
+        placeholder: context.getStore('_Store2').getInputValue(),
     };
 }));

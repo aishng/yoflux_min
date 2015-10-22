@@ -3,10 +3,11 @@ var ReactDOM = require('react-dom');
 var Fluxible = require('fluxible');
 var Component = require('./app/Component');
 var Store = require('./app/Store');
+var Store2 = require('./app/Store2');
 
 var app = new Fluxible({
     component: Component,
-    stores: [Store]
+    stores: [Store, Store2]
 });
 
 var context = app.createContext();
