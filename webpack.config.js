@@ -1,15 +1,11 @@
 var webpack = require('webpack');
-var path = require('path');
 
 var webpackConfig = {
-    resolve: {
-        extensions: ['', '.js']
-    },
     entry: [
         './client.js'
     ],
     output: {
-        path: 'public/',
+        path: 'public/js/',
         filename: 'app.js'
     }
 };

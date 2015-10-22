@@ -1,13 +1,11 @@
 var React = require('react');
-var ReactDOM = require('react-dom');
-var TestStore = require('./TestStore');
-var testAction = require('./testAction');
+var Action = require('./Action');
 
-var Component = React.createClass({
-    displayName: 'TheMainComponent',
+module.exports = React.createClass({
+    displayName: 'Component',
 
     handleChange: function(e) {
-        this.props.context.executeAction(testAction, e.target.value);
+        this.props.context.executeAction(Action, e.target.value);
     },
 
     render: function() {
@@ -18,5 +16,3 @@ var Component = React.createClass({
         });
     }
 });
-
-module.exports = Component;
