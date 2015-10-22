@@ -1,3 +1,4 @@
+Object.assign = require('object-assign');
 var React = require('react');
 var ReactDOM = require('react-dom');
 var Fluxible = require('fluxible');
